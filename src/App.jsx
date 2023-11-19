@@ -13,8 +13,10 @@ function App() {
         <div className="profile-container">
           <div className="profile-container-top">
             <img src="./assets/image-jeremy.png" alt="Profile picture" />
-            <p>Report for</p>
-            <h1>Jeremy Robson</h1>
+            <div className="profile-container-top-info">
+              <p>Report for</p>
+              <h1>Jeremy Robson</h1>
+            </div>
           </div>
           <div className="profile-container-bot">
             <ul className="timeframe-toggler">

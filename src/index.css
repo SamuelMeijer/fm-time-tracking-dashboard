@@ -4,17 +4,6 @@
 @import-normalize;
 
 :root {
-  font-family: "Rubik", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
   /* Primary color */
   --blue-primary: hsl(246, 80%, 60%);
   /* Category colors */
@@ -29,6 +18,22 @@
   --blue-dark: hsl(235, 46%, 20%);
   --blue-desaturated: hsl(235, 45%, 61%);
   --blue-pale: hsl(236, 100%, 87%);
+
+  font-family: "Rubik", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--blue-very-dark);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {

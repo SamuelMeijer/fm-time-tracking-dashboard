@@ -1,5 +1,6 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
+  max-width: 1180px;
   margin: 0 auto;
   text-align: center;
 }
@@ -14,22 +15,64 @@ li {
 
 main {
   width: 100%;
+  min-height: 500px;
   display: grid;
-  grid-template: 
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
   "a b c d"
   "a e f g";
-  gap: 1rem;
+  gap: 1.5rem;
 
 }
 
 .profile-container {
-  width: 100%;
+  border-radius: 1rem;
   grid-area: a;
+  background: var(--blue-dark);
+
+  text-align: left;
+}
+
+.profile-container-top {
+  height: 70%;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 
   background: var(--blue-desaturated);
 }
 
+.profile-container-top-info {
+  padding-bottom: 3rem;
+  font-weight: 300;
+}
+
+.profile-container-top-info p {
+  color: var(--blue-pale)
+}
+
+.profile-container-top-info h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.profile-container-top img {
+  width: 40%;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+.category {
+  background: var(--blue-dark)
+}
+
 .attribution {
+  margin: 0.75rem 0;
   font-size: 11px;
   text-align: center;
 }
