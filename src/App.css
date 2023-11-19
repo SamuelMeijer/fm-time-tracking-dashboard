@@ -1,12 +1,32 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
 h3 {
   font-size: 1.125rem;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template: 
+  "a b c d"
+  "a e f g";
+  gap: 1rem;
+
+}
+
+.profile-container {
+  width: 100%;
+  grid-area: a;
+
+  background: var(--blue-desaturated);
 }
 
 .attribution {
