@@ -1,6 +1,6 @@
 #root {
   width: 100%;
-  max-width: 1180px;
+  max-width: 1100px;
   margin: 0 auto;
   text-align: center;
 }
@@ -15,14 +15,14 @@ li {
 
 main {
   width: 100%;
-  min-height: 500px;
+  min-height: 520px;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: 
   "a b c d"
   "a e f g";
-  gap: 1.5rem;
+  gap: 2rem;
 
 }
 
@@ -35,7 +35,7 @@ main {
 }
 
 .profile-container-top {
-  height: 70%;
+  height: 68%;
   border-radius: 1rem;
   padding: 2rem;
 
@@ -44,11 +44,11 @@ main {
   align-items: flex-start;
   justify-content: space-between;
 
-  background: var(--blue-desaturated);
+  background: var(--blue-primary);
 }
 
 .profile-container-top-info {
-  padding-bottom: 3rem;
+  padding-bottom: 3.1rem;
   font-weight: 300;
 }
 
@@ -62,9 +62,25 @@ main {
 }
 
 .profile-container-top img {
-  width: 40%;
+  width: 45%;
   border: 3px solid #fff;
   border-radius: 50%;
+}
+
+.profile-container-bot {
+  width: 100%;
+  height: 32%;
+  padding: 2rem;
+}
+.timeframe-toggler {
+  height: 100%;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-size: 1.125rem;
+  color: var(--blue-desaturated)
 }
 
 .category {
