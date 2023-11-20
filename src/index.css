@@ -1,7 +1,5 @@
 /* Importing Google-font */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
-/* Importing CSS-reset */
-@import-normalize;
 
 :root {
   /* Primary color */
@@ -34,6 +32,8 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  border: 0;
+  padding: 0;
 }
 
 body {
