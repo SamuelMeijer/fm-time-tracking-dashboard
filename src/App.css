@@ -83,10 +83,6 @@ main {
   color: var(--blue-desaturated)
 }
 
-.category {
-  background: var(--blue-dark)
-}
-
 .attribution {
   margin: 0.75rem 0;
   font-size: 11px;

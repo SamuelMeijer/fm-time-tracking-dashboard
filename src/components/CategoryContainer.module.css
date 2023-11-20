@@ -1,0 +1,45 @@
+.category {
+  background: var(--blue-dark);
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+
+  /* TODO: Make dynamic and import icon */
+  background: var(--red-work);
+
+  display: flex;
+}
+
+.categoryDataContainer {
+  width: 100%;
+  height: 80%;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  background: var(--blue-dark);
+  align-self: flex-end;
+}
+
+.categoryDataContainerTitle {
+  width: 100%;
+  font-size: 1.125rem;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.categoryDataContainerTitle img {
+  width: 21px;
+  height: 5px;
+}
+
+.categoryDataContainerTitle img:hover {
+  cursor: pointer;
+}

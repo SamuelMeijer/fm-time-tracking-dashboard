@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import data from "./data/data.json";
+import CategoryContainer from "./components/CategoryContainer";
 
 function App() {
   // eslint-disable-next-line no-unused-vars
@@ -26,36 +27,12 @@ function App() {
             </ul>
           </div>
         </div>
-        <div className="category">
-          <p>CATEGORY</p>
-          <h2>23hrs</h2>
-          <p>Last Week - 25hrs</p>
-        </div>
-        <div className="category">
-          <p>CATEGORY</p>
-          <h2>23hrs</h2>
-          <p>Last Week - 25hrs</p>
-        </div>
-        <div className="category">
-          <p>CATEGORY</p>
-          <h2>23hrs</h2>
-          <p>Last Week - 25hrs</p>
-        </div>
-        <div className="category">
-          <p>CATEGORY</p>
-          <h2>23hrs</h2>
-          <p>Last Week - 25hrs</p>
-        </div>
-        <div className="category">
-          <p>CATEGORY</p>
-          <h2>23hrs</h2>
-          <p>Last Week - 25hrs</p>
-        </div>
-        <div className="category">
-          <p>CATEGORY</p>
-          <h2>23hrs</h2>
-          <p>Last Week - 25hrs</p>
-        </div>
+        <CategoryContainer />
+        <CategoryContainer />
+        <CategoryContainer />
+        <CategoryContainer />
+        <CategoryContainer />
+        <CategoryContainer />
       </main>
       {/* TODO: Fix info in footer */}
       <footer className="attribution">
