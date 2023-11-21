@@ -6,7 +6,7 @@ import CategoryContainer from "./components/CategoryContainer";
 function App() {
   // eslint-disable-next-line no-unused-vars
   const [jsonData, setJsonData] = useState(data);
-  const [timeframe, setTimeframe] = useState("daily");
+  const [timeframeState, setTimeframeState] = useState("daily");
 
   return (
     <>
@@ -27,12 +27,20 @@ function App() {
             </ul>
           </div>
         </div>
-        <CategoryContainer />
-        <CategoryContainer />
-        <CategoryContainer />
-        <CategoryContainer />
-        <CategoryContainer />
-        <CategoryContainer />
+
+        {jsonData && timeframeState ? (
+          jsonData.map((element, index) => {
+            return (
+              <CategoryContainer
+                data={element}
+                timeframe={timeframeState}
+                key={index}
+              />
+            );
+          })
+        ) : (
+          <></>
+        )}
       </main>
       {/* TODO: Fix info in footer */}
       <footer className="attribution">

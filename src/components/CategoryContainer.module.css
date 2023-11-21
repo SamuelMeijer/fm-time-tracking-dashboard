@@ -12,7 +12,7 @@
 
 .categoryDataContainer {
   width: 100%;
-  height: 80%;
+  height: 81.5%;
   border-radius: 1rem;
   padding: 2rem;
 
@@ -25,14 +25,27 @@
   align-self: flex-end;
 }
 
+.categoryDataContainer h3 {
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+.categoryDataContainer p {
+  font-weight: 300;
+  color: var(--blue-pale);
+}
+
 .categoryDataContainerTitle {
   width: 100%;
-  font-size: 1.125rem;
-  font-weight: 500;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.categoryDataContainerTitle h2 {
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
 .categoryDataContainerTitle img {

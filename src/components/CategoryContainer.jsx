@@ -1,15 +1,15 @@
 import Styles from "./CategoryContainer.module.css";
 
-export default function CategoryContainer() {
+export default function CategoryContainer({ data, timeframe }) {
   return (
     <div className={Styles.category}>
       <div className={Styles.categoryDataContainer}>
         <div className={Styles.categoryDataContainerTitle}>
-          <p>CATEGORY</p>
+          <h2>{data.title}</h2>
           <img src="./assets/icon-ellipsis.svg" alt="Three dots" />
         </div>
-        <h2>23hrs</h2>
-        <p>Last Week - 25hrs</p>
+        <h3>{data["timeframes"][timeframe]["current"]}</h3>
+        <p>Last Week - ost</p>
       </div>
     </div>
   );
