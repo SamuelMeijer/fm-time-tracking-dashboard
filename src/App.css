@@ -11,6 +11,11 @@ h3 {
 
 li {
   list-style: none;
+  cursor: pointer;
+}
+
+li:hover {
+  color: rgba(255, 255, 255, 0.87);
 }
 
 main {
@@ -19,11 +24,10 @@ main {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: 
-  "a b c d"
-  "a e f g";
+  grid-template-areas:
+    "a b c d"
+    "a e f g";
   gap: 2rem;
-
 }
 
 .profile-container {
@@ -53,7 +57,7 @@ main {
 }
 
 .profile-container-top-info p {
-  color: var(--blue-pale)
+  color: var(--blue-pale);
 }
 
 .profile-container-top-info h1 {
@@ -80,7 +84,11 @@ main {
   justify-content: space-between;
 
   font-size: 1.125rem;
-  color: var(--blue-desaturated)
+  color: var(--blue-desaturated);
+}
+
+.timeframe-selected {
+  color: rgba(255, 255, 255, 0.87);
 }
 
 .attribution {

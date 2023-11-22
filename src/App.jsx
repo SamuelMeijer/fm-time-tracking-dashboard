@@ -8,6 +8,24 @@ function App() {
   const [jsonData, setJsonData] = useState(data);
   const [timeframeState, setTimeframeState] = useState("daily");
 
+  function handleOnClick(event) {
+    event.preventDefault();
+
+    // Update state based on which timeframe is selected
+    if (event.target.tagName === "LI") {
+      switch (event.target.innerText) {
+        case "Daily":
+          setTimeframeState("daily");
+          break;
+        case "Weekly":
+          setTimeframeState("weekly");
+          break;
+        case "Monthly":
+          setTimeframeState("monthly");
+      }
+    }
+  }
+
   return (
     <>
       <main>
@@ -20,10 +38,28 @@ function App() {
             </div>
           </div>
           <div className="profile-container-bot">
-            <ul className="timeframe-toggler">
-              <li>Daily</li>
-              <li>Weekly</li>
-              <li>Monthly</li>
+            <ul className="timeframe-toggler" onClick={handleOnClick}>
+              <li
+                className={
+                  timeframeState === "daily" ? "timeframe-selected" : null
+                }
+              >
+                Daily
+              </li>
+              <li
+                className={
+                  timeframeState === "weekly" ? "timeframe-selected" : null
+                }
+              >
+                Weekly
+              </li>
+              <li
+                className={
+                  timeframeState === "monthly" ? "timeframe-selected" : null
+                }
+              >
+                Monthly
+              </li>
             </ul>
           </div>
         </div>
