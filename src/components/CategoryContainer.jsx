@@ -2,6 +2,19 @@
 import Styles from "./CategoryContainer.module.css";
 
 export default function CategoryContainer({ data, timeframe }) {
+  let textOutput = "";
+
+  switch (timeframe) {
+    case "daily":
+      textOutput = "Yesterday";
+      break;
+    case "weekly":
+      textOutput = "Last Week";
+      break;
+    case "monthly":
+      textOutput = "Last Month";
+      break;
+  }
   return (
     <div className={Styles.category}>
       <div className={Styles.categoryDataContainer}>
@@ -11,8 +24,9 @@ export default function CategoryContainer({ data, timeframe }) {
           <img src="./assets/icon-ellipsis.svg" alt="Three dots" />
         </div>
         <h3>{data["timeframes"][timeframe]["current"]}</h3>
-        {/* TODO: Make dynamic */}
-        <p>Last Week - {data["timeframes"][timeframe]["previous"]}</p>
+        <p>
+          {textOutput} - {data["timeframes"][timeframe]["previous"]}
+        </p>
       </div>
     </div>
   );
