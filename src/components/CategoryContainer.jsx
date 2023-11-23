@@ -40,7 +40,10 @@ export default function CategoryContainer({ data, timeframe }) {
 
   return (
     <div className={`${Styles.category} ${Styles[categoryName]}`}>
-      <div className={Styles.categoryHeader}></div>
+      <div
+        className={Styles.categoryHeader}
+        style={{ backgroundImage: `url(./assets/icon-${categoryName}.svg)` }}
+      ></div>
       <div className={Styles.categoryDataContainer}>
         <div className={Styles.categoryDataContainerTitle}>
           <h2>{data.title}</h2>
