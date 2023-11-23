@@ -15,10 +15,33 @@ export default function CategoryContainer({ data, timeframe }) {
       textOutput = "Last Month";
       break;
   }
+
+  let categoryName = "";
+  switch (data.title) {
+    case "Work":
+      categoryName = "work";
+      break;
+    case "Play":
+      categoryName = "play";
+      break;
+    case "Study":
+      categoryName = "study";
+      break;
+    case "Exercise":
+      categoryName = "exercise";
+      break;
+    case "Social":
+      categoryName = "social";
+      break;
+    case "Self Care":
+      categoryName = "self-care";
+      break;
+  }
+
   return (
-    <div className={Styles.category}>
+    <div className={`${Styles.category} ${Styles[categoryName]}`}>
+      <div className={Styles.categoryHeader}></div>
       <div className={Styles.categoryDataContainer}>
-        {/* TODO: Make background dynamicly change based on category */}
         <div className={Styles.categoryDataContainerTitle}>
           <h2>{data.title}</h2>
           <img src="./assets/icon-ellipsis.svg" alt="Three dots" />
