@@ -49,7 +49,7 @@ export default function CategoryContainer({ data, timeframe }) {
           <h2>{data.title}</h2>
           <img src="./assets/icon-ellipsis.svg" alt="Three dots" />
         </div>
-        <h3>{data["timeframes"][timeframe]["current"]}</h3>
+        <h3>{data["timeframes"][timeframe]["current"]}hrs</h3>
         <p>
           {textOutput} - {data["timeframes"][timeframe]["previous"]}
         </p>

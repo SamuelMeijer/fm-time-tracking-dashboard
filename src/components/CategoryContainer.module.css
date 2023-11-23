@@ -92,3 +92,41 @@
 .categoryDataContainerTitle img:hover {
   cursor: pointer;
 }
+
+@media (max-width: 375px) {
+  .category {
+    height: 160px;
+  }
+
+  .categoryHeader {
+    height: 25%;
+  }
+
+  .categoryDataContainer {
+    height: 75%;
+    display: grid;
+    padding: 1.8rem 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "a a"
+      "b c";
+  }
+
+  .categoryDataContainerTitle {
+    grid-area: a;
+  }
+
+  .categoryDataContainer h3 {
+    font-size: 2rem;
+    grid-area: b;
+    text-align: left;
+    align-self: flex-end;
+  }
+
+  .categoryDataContainer p {
+    grid-area: c;
+    text-align: right;
+    align-self: center;
+  }
+}
