@@ -78,18 +78,22 @@ function App() {
           <></>
         )}
       </main>
-      {/* TODO: Fix info in footer */}
+
       <footer className="attribution">
         <p>
-          Challenge by {"Samuel Meijer"}
+          Challenge by &nbsp;
           <a
-            href="https://www.frontendmentor.io?ref=challenge"
+            href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw"
             rel="noreferrer"
             target="_blank"
           >
             Frontend Mentor
           </a>
-          . Coded by <a href="#">Your Name Here</a>.
+          . Coded by{" "}
+          <a href="https://github.com/SamuelMeijer/fm-time-tracking-dashboard">
+            Samuel Meijer
+          </a>
+          .
         </p>
       </footer>
     </>
